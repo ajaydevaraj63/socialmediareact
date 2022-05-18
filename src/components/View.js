@@ -605,71 +605,53 @@ const View = () => {
             }
           ]
   return (
-    <div><Nav/>
-          
+    <div>
+           <Nav/>
+         
           <div class="container">
-            <div class="row">
+            <div class="row ">
                   <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                        <div class="row g-4">
+                        
                                     
 
 
                               {socialapp.map((value,key)=>{
-                                    return  <div class="col col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
-                                          <div class="card">
-<center>  <img style={{width:1000,height:500}} src="https://wallpaperaccess.com/full/170249.jpg" class="card-img-top" alt="..."/></center>
+                                    return   <div class='container'  style={{
+                                          backgroundColor: 'lightblue',margin:55
+                                        }}>
+                                          <div class="row  ">
+                                    <div class="col g-5 col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                                          <div class="card "style={{width:100,height:200}}>
+<center>  <img style={{width:500,height:280}} src="https://wallpaperaccess.com/full/170249.jpg" class="card-img-top" alt="..."/></center>
  {
-     <div class="container">
-            <div class="row">
-                  <div class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                  <div class="card-body">
-    <h5 class="card-title"><b>{value.title}</b></h5>
-    <p class="card-text"><div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>{value.body}</strong> 
-      </div>
-    </div>
-  </div>
+   
+  
  
-</div></p>
-  </div>    
- 
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                  <div class="card-body">
-    <h5 class="card-title"><label>like</label></h5>
-    
-  </div>    
- 
-                        </div>
-                  </div>
-            </div>
- /* </center> <div class="card-body">
-    <h5 class="card-title"><b>{value.id}</b></h5>
-    <p class="card-text">{value.title}</p>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"><b>{value.id}</b></h5>
-    <p class="card-text">{value.title}</p>
-  </div> */
   }
   
 </div>
-                                          
-                                           </div>
+ </div>
+ <div class="col g-5 col-12 col-sm-4 col-md-4 col-lg-4 col-xl-5 col-xxl-4">
+                                          <div class="card "style={{width:300,height:300,marginBottom:40}}>
+
+ {
+   
+<div class="card-body"style={{color:'red'}}>
+    <h5 class="card-title"><b>{value.id}</b></h5>
+    <p class="card-text">{value.title}</p>
+  </div>
+  }
+  
+</div>
+ </div>
+ </div>
+                                    </div>
                               })
                               
                               
                               
-                              /* <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div> */}
-                        </div>
+                              }
+                       
                   </div>
             </div>
       </div></div>
